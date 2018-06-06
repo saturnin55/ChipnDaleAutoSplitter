@@ -15,7 +15,9 @@ Auto Splitter for Chip n'Dale NES
 - Automatically reset the timer when you restart the game (or load a savestate of a level before the current level)
 - Automatically split when the FatCat disappears after the 5th hit
 
-## Installation (this won't work until the autosplitter is published to the official livesplit repo)
+## Installation 
+
+(this won't work until the autosplitter is published to the official livesplit repo)
 
 - Go to "Edit Splits.." in LiveSplit
 - Enter the name of the game in "Game Name"
