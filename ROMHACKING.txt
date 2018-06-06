@@ -1,0 +1,36 @@
+0x0038
+
+after 1st boss = 1	0001
+after spaceshit = 5	0005
+after robot = 21	0015
+after climb = 85	0055
+after casino cat = 213	00D5
+after H = 469 		01D5
+after caterpillar = 981	03D5
+after fatcat = 981 AND 00Ec : 0 != 0
+
+0x00f8 = number of continues left
+
+1 byte : 0x05b6 : unit life
+1 byte : 0x05b6 : unit life
+
+start
+0031 : 00 -> 0b when start
+
+0098	5500
+00c0	0000
+00c6	028b
+
+commence dernier stage :
+00ed = 3c
+- un moment donné = 00
+- change = 1 hit back to zero
+- change = 1 hit back to zero
+- change = 1 hit back to zero
+- change = 1 hit back to zero
+- change = terminé
+
+00ce	030f
+01f4	0080
+
+
