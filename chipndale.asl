@@ -153,6 +153,6 @@ startup
 	
 	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.01");
 	settings.Add("main3", false, "--https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
-	settings.Add("main2", false, "--DOES NOT SUPPORT 'CONTINUES' YET!!!", "main");
+	settings.Add("main2", false, "--BUGS: may double split on spaceship at times :( Undo the split when it happens", "main");
 	settings.Add("main1", false, "--Currently only support FCEUX emulator", "main");
 }
