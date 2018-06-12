@@ -1,3 +1,9 @@
+/** 
+ * chipndale.asl - An ASL script for LiveSplit for the game Chip 'N Dale: Rescue Rangers (NES) using FCEUX.
+ * @author saturnin55
+ * @version 0.3 on June 12th 2018
+ * Splits on boss kill, supports Any% and All Zones
+ */
 state("fceux")
 {
 	short boss_cleared: 0x003B1388, 0x38;
