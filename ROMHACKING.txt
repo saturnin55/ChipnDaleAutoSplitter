@@ -1,13 +1,20 @@
-0x0038
+Values for 0x0038 (~ current level)
 
-after 1st boss = 1	0001
-after spaceshit = 5	0005
-after robot = 21	0015
-after climb = 85	0055
-after casino cat = 213	00D5
-after H = 469 		01D5
-after caterpillar = 981	03D5
-after fatcat = 981 AND 00Ec : 0 != 0
+                   any% | allzones    any% | allzones
+                   ---------------    ---------------
+after 1st boss =      1 | 1           0001 | 0001
+after A boss =            3                | 0003
+after C =                 11      	     	 | 0011
+after spaceshit =     5 | 15	        0005 | 000f
+after robot =        21 | 31	 	      0015 | 001f
+after fish =            | 63	             | 003f
+after climb =        85 | 127	        0055 | 007f
+after casino cat =  213 | 255	        00D5 | 00ff
+after H =           469 | 511	        01D5 | 01ff
+after caterpillar = 981 | 1023	      03D5 | 03ff
+
+after fatcat =      981 | 1023 AND 00Ec : 0 != 0
+
 
 0x00f8 = number of continues left
 
