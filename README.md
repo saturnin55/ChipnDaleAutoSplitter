@@ -1,4 +1,4 @@
- ChipnDaleAutoSplitter
+## ChipnDaleAutoSplitter
  
 Auto Splitter for Chip n'Dale NES
 
