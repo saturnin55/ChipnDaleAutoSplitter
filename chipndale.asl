@@ -4,7 +4,7 @@ state("fceux")
 	byte fatcat_stun: 0x003B1388, 0xed;
 	byte flag_start: 0x003B1388, 0x31;
 	byte flag_start2: 0x003B1388, 0x99; 
-    byte continues:  0x003B1388, 0xf8; 
+	byte continues:  0x003B1388, 0xf8; 
 	byte lifes_p1:  0x003B1388, 0x05b6; 
 	byte lifes_p2:  0x003B1388, 0x05b4;
 } 
@@ -12,11 +12,11 @@ state("fceux")
 
 split
 {
-    if(vars.started == 0)
-	   return(false);
-	   
-//vars.fatcat_hits= 0;
-//vars.fatcat_unstunned = 1;
+	if(vars.started == 0)
+		return(false);
+
+	//vars.fatcat_hits= 0;
+	//vars.fatcat_unstunned = 1;
 
 	// no more continues or lifes
 	if(current.lifes_p2 == 0)
@@ -68,6 +68,7 @@ split
 	{
 		print("ASL READY FOR FAT CAT!!!");  
 		vars.ready_for_fatcat = 1;
+		
 		return(false);	
 	}
 	else if(vars.ready_for_fatcat == 1 && vars.fatcat_unstunned == 1 && current.fatcat_stun != 0 && vars.fatcat_hits < 5)
@@ -115,15 +116,16 @@ init
 
 start
 {
-if(timer.CurrentPhase == TimerPhase.NotRunning)
-print("not running");
+	if(timer.CurrentPhase == TimerPhase.NotRunning)
+		print("not running");
 
-//print(timer.CurrentPhase);
+	//print(timer.CurrentPhase);
 
 	//print("ASL vars.started : " + vars.started);
 	//print("ASL current.boss_cleared : " + current.boss_cleared);
 	//print("ASL current.flag_start : " + current.flag_start);
-    print("ASL Checking for START() boss_cleared : " + current.boss_cleared + ", flag_start : " + current.flag_start + ", vars.started : " + vars.started);
+	print("ASL Checking for START() boss_cleared : " + current.boss_cleared + ", flag_start : " + current.flag_start + ", vars.started : " + vars.started);
+	
 	if(current.boss_cleared == 0 && current.flag_start != 0 && vars.started == 0)
 	{
 		vars.started = 1;
