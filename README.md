@@ -43,6 +43,7 @@ Here you can enable/disable the options for auto start, auto reset, and auto spl
 
 - Sometimes,the autosplitter will double split at the Spaceship. I haven't figured out how to fix that yet. It doesn't happen often, but when it happen, undo the last split.
 - Probably doesn't work well in 2-player mode
+- Sometimes the timer will start automatically when the demo starts. To fix, just manually start the timer and then hit alt-r to reset the console
 
 ## Contact
 
