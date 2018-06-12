@@ -12,6 +12,9 @@ state("fceux")
 
 split
 {
+    if(vars.started == 0)
+	   return(false);
+	   
 //vars.fatcat_hits= 0;
 //vars.fatcat_unstunned = 1;
 
@@ -21,7 +24,7 @@ split
 		vars.flag_reset = 1;
 		return(false);
 	}
-	
+	 
 	// continues
 	if((old.continues == 0x02 && current.continues == 0x01) ||
 		(old.continues == 0x01 && current.continues == 0x00) ||
@@ -61,7 +64,7 @@ split
 		print("ASL BOSS SPLIT");
 		return(true);
 	}
-	else if(vars.ready_for_fatcat == 0 && current.boss_cleared == 981 && old.boss_cleared == 981 && current.fatcat_stun == 0)
+	else if(vars.ready_for_fatcat == 0 && ((current.boss_cleared == 981 && old.boss_cleared == 981) || (current.boss_cleared == 1023 && old.boss_cleared == 1023)) && current.fatcat_stun == 0)
 	{
 		print("ASL READY FOR FAT CAT!!!");  
 		vars.ready_for_fatcat = 1;
@@ -82,6 +85,7 @@ split
 		vars.started = 0;
 		vars.ready_for_fatcat = 0;
 		vars.fatcat_hits = 0;
+		
 		return(true);
 	}
 	else
@@ -96,18 +100,30 @@ init
 	vars.ready_for_fatcat = 0;
 	vars.flag_reset = 0;
 	vars.continues = 3;
+	
 	if(settings.StartEnabled)
 		vars.started = 0; 
 	else
+	{
 		vars.started = 1;
+		vars.fatcat_hits = 0;
+		vars.lifes = 2;
+		vars.continues = 3;
+		vars.flag_reset = 0;
+	}
 }
 
 start
 {
-print("ASL vars.started : " + vars.started);
-print("ASL current.boss_cleared : " + current.boss_cleared);
-print("ASL current.flag_start : " + current.flag_start);
+if(timer.CurrentPhase == TimerPhase.NotRunning)
+print("not running");
 
+//print(timer.CurrentPhase);
+
+	//print("ASL vars.started : " + vars.started);
+	//print("ASL current.boss_cleared : " + current.boss_cleared);
+	//print("ASL current.flag_start : " + current.flag_start);
+    print("ASL Checking for START() boss_cleared : " + current.boss_cleared + ", flag_start : " + current.flag_start + ", vars.started : " + vars.started);
 	if(current.boss_cleared == 0 && current.flag_start != 0 && vars.started == 0)
 	{
 		vars.started = 1;
@@ -115,8 +131,10 @@ print("ASL current.flag_start : " + current.flag_start);
 		vars.lifes = 2;
 		vars.continues = 3;
 		vars.flag_reset = 0;
+		
 		print("ASL START");
 		print("ASL STATUS: continues => " + vars.continues + ", lifes => " + vars.lifes);
+		
 		return(true);
 	}
 }
@@ -151,8 +169,8 @@ startup
 {
 	refreshRate = 70;
 	
-	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.01");
+	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.02");
 	settings.Add("main3", false, "--https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
-	settings.Add("main2", false, "--BUGS: may double split on spaceship at times :( Undo the split when it happens", "main");
+	settings.Add("main2", false, "--MAY NOT WORK IN 2-PLAYER MODE!!!", "main");
 	settings.Add("main1", false, "--Currently only support FCEUX emulator", "main");
 }
