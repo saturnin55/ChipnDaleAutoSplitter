@@ -171,7 +171,7 @@ startup
 {
 	refreshRate = 70;
 	
-	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.02");
+	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.03");
 	settings.Add("main3", false, "--https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
 	settings.Add("main2", false, "--MAY NOT WORK IN 2-PLAYER MODE!!!", "main");
 	settings.Add("main1", false, "--Currently only support FCEUX emulator", "main");
