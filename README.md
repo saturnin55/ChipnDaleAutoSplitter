@@ -14,6 +14,7 @@ Auto Splitter for Chip n'Dale NES
 - Automatically start the timer when you start a run. Timer starts after selecting the character (Chip or Dale)
 - Automatically reset the timer when you restart the game (or load a savestate of a level before the current level)
 - Automatically split when the FatCat disappears after the 5th hit
+- Supports both Any% and All Zones
 
 ## Installation 
 
@@ -41,6 +42,7 @@ Here you can enable/disable the options for auto start, auto reset, and auto spl
 ## BUGS
 
 - Sometimes,the autosplitter will double split at the Spaceship. I haven't figured out how to fix that yet. It doesn't happen often, but when it happen, undo the last split.
+- Probably doesn't work well in 2-player mode
 
 ## Contact
 
