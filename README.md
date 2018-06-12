@@ -18,8 +18,6 @@ Auto Splitter for Chip n'Dale NES
 
 ## Installation 
 
-(this won't work until the autosplitter is published to the official livesplit repo)
-
 - Go to "Edit Splits.." in LiveSplit
 - Enter the name of the game in "Game Name"
   - This must be entered correctly for LiveSplit to know which script to load
@@ -28,6 +26,7 @@ Auto Splitter for Chip n'Dale NES
 
 ## Manual Installation
 
+- Download https://raw.githubusercontent.com/saturnin55/ChipnDaleAutoSplitter/master/chipndale.asl
 - Edit Layout
 - Add Other /Scriptable Componment / Select chipndale.asl
   
