@@ -52,13 +52,24 @@ commence dernier stage :
   - 1 : zone 0, lab
   - 2 : zone 0, mouse room
   - 18 : zone 0, boss room
+  - 3 : zone A, boss room (owl), 0x0038 -> 0x0003
   - 4 : zone B, faucet room
   - 5 : zone B, second cauldron room
-  - 6 : zone B, spaceship room
+  - 6 : zone B, boss room (spaceship)
+  - 7 : zone C, fan room (split when 0x0038 -> 0x000B)
   - 8 : zone D, rabbit room
   - 9 : zone D, jack-in-the-box room
-  - 0A : zone D, robot room
-  - 0E : zone F, climb room, split when 0x0038 : 0x15 -> 0x55
+  - 0A : zone D, boss room (robot)
+  - 0B : zone E, boat room
+  - 0C : zone E, quicksand room
+  - 0D : zone E, boss room (fish)
+  - 0E : zone F, climb room, split when 0x0038 : 0x0015 -> 0x0055
   - 0F : zone G, rhino room
   - 10 : zone G, rhino2 room
-  - 11 : zone G, casino cat room
+  - 11 : zone G, boss room (casino cat)
+  - 19 : zone H, last room. split when 0x0038 : 0x00d5 -> 0x01d5
+  - 12 : zone I, mouse room
+  - 13 : zone I, desk&lamp room
+  - 14 : zone I, boss room (caterpillar)
+  - 15 : zone J, treadmill of death
+  - 16 : zone J, boss room (fatcat), split when 0x00ee == 5
