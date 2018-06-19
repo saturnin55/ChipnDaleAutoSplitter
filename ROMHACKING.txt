@@ -40,4 +40,25 @@ commence dernier stage :
 00ce	030f
 01f4	0080
 
+0x0214 
+  - 0xf8 : run
+  - 0x10 : demo
+  - 0x67 : main menu
+  - 0x54-?? : map
 
+  
+0x006e
+  - 0 : zone 0, first area
+  - 1 : zone 0, lab
+  - 2 : zone 0, mouse room
+  - 18 : zone 0, boss room
+  - 4 : zone B, faucet room
+  - 5 : zone B, second cauldron room
+  - 6 : zone B, spaceship room
+  - 8 : zone D, rabbit room
+  - 9 : zone D, jack-in-the-box room
+  - 0A : zone D, robot room
+  - 0E : zone F, climb room, split when 0x0038 : 0x15 -> 0x55
+  - 0F : zone G, rhino room
+  - 10 : zone G, rhino2 room
+  - 11 : zone G, casino cat room
