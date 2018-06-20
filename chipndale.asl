@@ -92,6 +92,7 @@ startup
 	
 	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.10 by saturnin55");
 	settings.Add("main3", false, "--https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
-	settings.Add("main2", false, "--DISABLE 'RESET' FEATURE FOR 2-PLAYER MODE!!!", "main");
-	settings.Add("main1", false, "--Currently only supports FCEUX emulator", "main");
+	settings.Add("main2", false, "--Disable 'RESET' feature for 2-player mode", "main");
+	settings.Add("main1", false, "--Supported emulators : FCEUX", "main");
+	settings.Add("main1", false, "--Thanks to Zimond for helping!", "main");
 }
