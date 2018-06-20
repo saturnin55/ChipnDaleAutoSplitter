@@ -49,7 +49,7 @@ Here you can enable/disable the options for auto start, auto reset, and auto spl
 ## Thanks
 
 - Thanks to [Kinnijup](http://twitch.tv/kinnijup) and [Moliman](http://twitch.tv/moliman22) for testing. 
-- Thanks to Zimond from the Classic Capcom (Speedruns) Discord for figuring out some ROM stuff!
+- Thanks to [Zimond](http://twitch.tv/zimond) from the Classic Capcom (Speedruns) Discord for figuring out some ROM stuff!
 
 ## Contact
 
