@@ -1,11 +1,10 @@
-state("fceux")
+state("fceux") 
 {
- 	short boss_cleared: 	0x003B1388, 0x0038;
+ 	short boss_cleared:	0x003B1388, 0x0038;
 	byte boss_hp: 		0x003B1388, 0x00ee;
 	byte area_id: 		0x003B1388, 0x006e;
 	byte is_started: 	0x003B1388, 0x0214; // F8 = running, 10 = demo, 67 = main menu (except some wonky stuff in G cutscene)
 } 
-
 
 split
 {
@@ -62,7 +61,6 @@ split
 
 init  
 {
-	vars.started = 0; 
 }
 
 start
@@ -90,10 +88,10 @@ reset
 
 startup
 {
-	refreshRate = 70;
+	refreshRate = 60;
 	
-	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.10");
+	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.10 by saturnin55");
 	settings.Add("main3", false, "--https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
-	settings.Add("main2", false, "--DISABLE RESET FOR 2-PLAYER MODE!!!", "main");
-	settings.Add("main1", false, "--Currently only support FCEUX emulator", "main");
+	settings.Add("main2", false, "--DISABLE 'RESET' FEATURE FOR 2-PLAYER MODE!!!", "main");
+	settings.Add("main1", false, "--Currently only supports FCEUX emulator", "main");
 }
