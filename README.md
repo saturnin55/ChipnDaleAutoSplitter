@@ -24,17 +24,19 @@ Auto Splitter for Chip n'Dale NES
 - Click the "Activate" button to download and enable the autosplitter script
   - If you ever want to stop using the autosplitter altogether, just click "Desactivate"
 
-## Manual Installation
+## Manual Installation (skip if you used the 'Activate' Button)
 
 - Download https://raw.githubusercontent.com/saturnin55/ChipnDaleAutoSplitter/master/chipndale.asl
 - Edit Layout
-- Add Other /Scriptable Componment / Select chipndale.asl
+- Add Other /Scriptable Componment / Script Path: Browse to the "chipndale.asl" file you downloaded previously
+- Enable Start/Split/Reset feature here
   
-## Set-up
+## Set-up (if auto-installed)
 
 - Go to "Edit Splits..." in LiveSplit
 - Click "Settings" to configure the autosplitter
   - **Note:** If for some reason LiveSplit does not automatically load the script, click "Browse...", navigate to "\LiveSplit\Components\" and select the appropriate script.
+- Enable Start/Split/Reset feature here
   
 Here you can enable/disable the options for auto start, auto reset, and auto splitting.
 
