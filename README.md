@@ -38,7 +38,7 @@ Auto Splitter for Chip n'Dale NES
   
 Here you can enable/disable the options for auto start, auto reset, and auto splitting.
 
-## BUGS
+## Bugs
 
 - You need to disable the 'Reset' feature to do 2-player mode autosplitting
 - Let me know of any bugs
