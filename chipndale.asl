@@ -71,7 +71,7 @@ start
 		return(false);
 }
 
-reset
+reset 
 {	
 	//  avoid auto reset in the cutscene
 	if(current.is_started == 0x10 && current.boss_cleared != 0x00d5 && current.boss_cleared != 0x00ff)
@@ -91,8 +91,7 @@ startup
 	refreshRate = 60;
 	
 	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.10 by saturnin55");
-	settings.Add("main3", false, "--https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
-	settings.Add("main2", false, "--Disable 'RESET' feature for 2-player mode", "main");
-	settings.Add("main1", false, "--Supported emulators : FCEUX", "main");
-	settings.Add("main1", false, "--Thanks to Zimond for helping!", "main");
+	settings.Add("main0", false, "- Website : https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
+	settings.Add("main1", false, "- Supported emulators : FCEUX", "main");
+	settings.Add("main2", false, "- Note : Disable 'RESET' feature for 2-player autosplitting", "main");
 }
