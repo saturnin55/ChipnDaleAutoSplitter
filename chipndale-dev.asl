@@ -53,7 +53,7 @@ split
 	// boss levels
 	///////////////////
 	// Area J
-	else if(current.area_id == 0x16 && old.boss_hp != 0x4 && current.boss_hp == 0x5)
+	else if(current.area_id == 0x16 && old.boss_hp == 0x4 && current.boss_hp == 0x5)
 	{
 		print("ASL SPLIT J");
 		
