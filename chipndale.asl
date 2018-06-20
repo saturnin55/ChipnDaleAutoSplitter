@@ -32,7 +32,7 @@ split
 	// boss levels
 	///////////////////
 	// Area J
-	else if(current.area_id == 0x16 && old.boss_hp != 0x4 && current.boss_hp == 0x5)	
+	else if(current.area_id == 0x16 && old.boss_hp == 0x4 && current.boss_hp == 0x5)	
 		return(true);
 	// Area 0
 	else if(current.area_id == 0x18 && current.boss_hp == 0x5 && old.boss_cleared != current.boss_cleared)	
