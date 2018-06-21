@@ -6,6 +6,15 @@ state("fceux")
 	byte is_started: 	0x003B1388, 0x0214; // F8 = running, 10 = demo, 67 = main menu (except some wonky stuff in G cutscene)
 } 
 
+state("nestopia") 
+{
+	// base 0x0000 address of ROM : "nestopia.exe", 0x1b2bcc, 0, 8, 0xc, 0xc, 0x68;
+	short boss_cleared: 	"nestopia.exe", 0x1b2bcc, 0, 8, 0xc, 0xc, 0xa0;  // 0x0038
+	byte boss_hp: 		"nestopia.exe", 0x1b2bcc, 0, 8, 0xc, 0xc, 0x156; // 0x00ee
+	byte area_id: 		"nestopia.exe", 0x1b2bcc, 0, 8, 0xc, 0xc, 0xd6;  // 0x006e
+	byte is_started: 	"nestopia.exe", 0x1b2bcc, 0, 8, 0xc, 0xc, 0x27c; // 0x0214
+} 
+
 split
 {
 	///////////////////
@@ -59,10 +68,6 @@ split
 		return(false); 
 }
 
-init  
-{
-}
-
 start
 {	
 	if(old.is_started == 0x67 && current.is_started == 0xf8)	
@@ -92,6 +97,7 @@ startup
 	
 	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.10 by saturnin55");
 	settings.Add("main0", false, "- Website : https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
-	settings.Add("main1", false, "- Supported emulators : FCEUX", "main");
-	settings.Add("main2", false, "- Note : Disable 'RESET' feature for 2-player autosplitting", "main");
+	settings.Add("main2", false, "- Supported emulators : FCEUX, Netstopia", "main");
+	settings.Add("main1", false, "- Note : Disable 'RESET' feature for 2-player autosplitting", "main");
+
 }
