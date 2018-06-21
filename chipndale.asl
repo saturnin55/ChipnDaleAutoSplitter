@@ -95,7 +95,7 @@ startup
 {
 	refreshRate = 60;
 	
-	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.10 by saturnin55");
+	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.11 by saturnin55");
 	settings.Add("main0", false, "- Website : https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
 	settings.Add("main2", false, "- Supported emulators : FCEUX, Netstopia", "main");
 	settings.Add("main1", false, "- Note : Disable 'RESET' feature for 2-player autosplitting", "main");
