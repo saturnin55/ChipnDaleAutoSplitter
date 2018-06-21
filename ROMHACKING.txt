@@ -15,11 +15,16 @@ after caterpillar = 981 | 1023	      03D5 | 03ff
 
 after fatcat =      981 | 1023 AND 00Ec : 0 != 0
 
+005e : stun timer
+
+05ae : flowers
+00ed : boss stun
+00f8 : continues
 
 0x00f8 = number of continues left
 
-1 byte : 0x05b6 : unit life
-1 byte : 0x05b6 : unit life
+1 byte : 0x05b4 : life unit 1
+1 byte : 0x05b6 : life unit 2
 
 start
 0031 : 00 -> 0b when start
