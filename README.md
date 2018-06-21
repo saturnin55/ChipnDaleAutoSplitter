@@ -45,7 +45,7 @@ Here you can enable/disable the options for auto start, auto reset, and auto spl
 
 - You need to disable the 'Reset' feature to do 2-player mode autosplitting
 - Let me know of any bugs
-- Support for BizHawk and Netstopia soon
+- Support for BizHawk soon
 
 ## Thanks
 
