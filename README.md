@@ -7,6 +7,7 @@ Auto Splitter for Chip n'Dale NES
 
 **Supported emulators:**
  - FCEUX 2.2.3
+ - Nestopia 1.40
  - Let me know if you need support for another emulator
  
 ## Features
