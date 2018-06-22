@@ -23,6 +23,8 @@ split
 	
 	// Area C 
 	if(current.area_id == 0x19 && old.boss_cleared != 0x000b && current.boss_cleared == 0x000b)
+		return(true);
+	else if(current.area_id == 0x19 && old.boss_cleared != 0x000d && current.boss_cleared == 0x000d)
 		return(true); 
 	// Area F - any%
 	else if(current.area_id == 0x19 && old.boss_cleared != 0x0055 && current.boss_cleared == 0x0055)	
@@ -95,7 +97,7 @@ startup
 {
 	refreshRate = 60;
 	
-	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.11 by saturnin55");
+	settings.Add("main", false, "Chip 'N Dale AutoSplitter 0.12 by saturnin55");
 	settings.Add("main0", false, "- Website : https://github.com/saturnin55/ChipnDaleAutoSplitter", "main");
 	settings.Add("main2", false, "- Supported emulators : FCEUX, Netstopia", "main");
 	settings.Add("main1", false, "- Note : Disable 'RESET' feature for 2-player autosplitting", "main");
