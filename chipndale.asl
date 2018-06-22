@@ -21,10 +21,12 @@ split
 	// no boss levels
 	/////////////////// 
 	
-	// Area C 
+	// Area C with all alternate routes
 	if(current.area_id == 0x19 && old.boss_cleared != 0x000b && current.boss_cleared == 0x000b)
 		return(true);
 	else if(current.area_id == 0x19 && old.boss_cleared != 0x000d && current.boss_cleared == 0x000d)
+		return(true); 
+	else if(current.area_id == 0x19 && old.boss_cleared != 0x000f && current.boss_cleared == 0x000f)
 		return(true); 
 	// Area F - any%
 	else if(current.area_id == 0x19 && old.boss_cleared != 0x0055 && current.boss_cleared == 0x0055)	
